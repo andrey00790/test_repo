@@ -1,0 +1,5 @@
+/snake
+/snake.exe
+*.test
+coverage.out
+/.env*
