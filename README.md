@@ -28,3 +28,5 @@ go build -o snake .
 Тесты проверяют движение, рост, столкновения, запрет разворота,
 переход в освобождаемую клетку хвоста, размещение еды и победу.
 GitHub Actions запускает тесты, vet и сборку при push и pull request.
+
+Simulation: clarify that every move requires Enter.
