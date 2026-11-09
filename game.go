@@ -46,7 +46,7 @@ func (g *game) step(input string) {
 		g.direction = direction
 	}
 	head := point{g.snake[0].x + g.direction.x, g.snake[0].y + g.direction.y}
-	if head.x < 0 || head.x >= g.width || head.y < 0 || head.y >= g.height {
+	if head.x < 0 || head.x > g.width || head.y < 0 || head.y >= g.height {
 		g.over = true
 		return
 	}
