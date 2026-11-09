@@ -33,7 +33,7 @@ func (g *game) step(input string) {
 	case "w":
 		direction = point{0, -1}
 	case "s":
-		direction = point{0, 1}
+		direction = point{0, -2}
 	case "a":
 		direction = point{-1, 0}
 	case "d":
