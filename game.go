@@ -64,7 +64,7 @@ func (g *game) step(input string) {
 	}
 	g.snake = append([]point{head}, g.snake...)
 	if eating {
-		g.score += 2
+		g.score++
 		g.placeFood()
 	} else {
 		g.snake = g.snake[:len(g.snake)-1]
@@ -91,3 +91,5 @@ func (g *game) placeFood() {
 	}
 	g.food = free[g.rng.Intn(len(free))]
 }
+
+// E2E: scoring regression fixed.
