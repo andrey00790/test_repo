@@ -64,7 +64,7 @@ func (g *game) step(input string) {
 	}
 	g.snake = append([]point{head}, g.snake...)
 	if eating {
-		g.score++
+		g.score += 2
 		g.placeFood()
 	} else {
 		g.snake = g.snake[:len(g.snake)-1]
